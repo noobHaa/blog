@@ -2,6 +2,8 @@ package com.blog.service;
 
 import com.blog.entity.BlogUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.blog.entity.vo.UserVo;
+import com.blog.vo.ResultModel;
 
 /**
  * <p>
@@ -13,4 +15,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IBlogUserService extends IService<BlogUser> {
 
+    ResultModel login(String username, String password);
+
+    ResultModel getVerifyCode(String phone);
+
+    ResultModel loginByPhone(String phone, String verifyCode);
+
+    UserVo getUserInfo(Integer userId);
 }

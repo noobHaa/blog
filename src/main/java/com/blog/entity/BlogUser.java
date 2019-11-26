@@ -30,6 +30,8 @@ public class BlogUser implements Serializable {
 
     private String password;
 
+    private String phone;
+
     private LocalDateTime createtime;
 
     private LocalDateTime updatetime;
