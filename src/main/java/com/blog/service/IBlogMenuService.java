@@ -2,6 +2,7 @@ package com.blog.service;
 
 import com.blog.entity.BlogMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.blog.vo.ResultModel;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IBlogMenuService extends IService<BlogMenu> {
 
+    ResultModel getMenu();
 }

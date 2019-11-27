@@ -50,5 +50,4 @@ public class UserController {
     public ResultModel getUserInfo(@CurrentUser UserVo userVo) {
         return ResultModel.success(userVo);
     }
-
 }

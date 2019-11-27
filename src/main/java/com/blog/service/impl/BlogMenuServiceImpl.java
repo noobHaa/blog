@@ -4,11 +4,12 @@ import com.blog.entity.BlogMenu;
 import com.blog.mapper.BlogMenuMapper;
 import com.blog.service.IBlogMenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.blog.vo.ResultModel;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author lilei
@@ -17,4 +18,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class BlogMenuServiceImpl extends ServiceImpl<BlogMenuMapper, BlogMenu> implements IBlogMenuService {
 
+    @Override
+    public ResultModel getMenu() {
+        return null;
+    }
 }
